@@ -8,6 +8,6 @@ public class InfoMessages {
 	}
 
 	public static final String LOGIN = "ログインしてください。";
-	public static final String LOGOUT = "ログアウトしました。";
+	public static final String LOGOUT = "ログアウトしました";
 
 }
