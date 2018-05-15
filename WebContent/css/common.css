@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+/* ======== レイアウト ======== */
+body {
+	/* bodyの配置設定(幅/中央揃え) */
+	width: 851px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header, aside, article {
+	/* 各セクション共通の設定（ブロック要素/境界線の指定） */
+	display: block;
+	border: 1px solid #ccc;
+}
+
+nav {
+	/* navの配置(幅/高さ) */
+	width: 900px;
+	height: 40px;
+}
+
+aside {
+	/* asideの配置(幅/高さ/回り込み) */
+	width: 212px;
+	height: 500px;
+	float: left;
+}
+
+article {
+	/* articleの配置(幅/高さ/回り込み) */
+	width: 634px;
+	height: 500px;
+	float: right;
+}
+
+footer {
+	/* footerの設定(回り込み解除/テキスト中央揃え) */
+	clear: both !important;
+	text-align: center;
+}
+
+/* ======== 見出し======== */
+h1 {
+	/* h1のスタイル設定(高さ/余白/太字/フォントカラー/背景画像) */
+	height: 48px;
+	margin: 0px 0px 5px 0px;
+	padding: 6px 0px 0px 10px;
+	font-weight: bold;
+	color: #0000cd;
+	background-image: url("../images/headline1.gif");
+}
+
+article h3 {
+	/* article配下 h3のスタイル設定(高さ/余白//太字/フォントカラー/背景画像) */
+	height: 24px;
+	margin: 0px 0px 5px 0px;
+	padding: 6px 0px 0px 10px;
+	font-weight: bold;
+	color: #555555;
+	background-image: url("../images/headline3.gif");
+}
+
+/* ======== メインメニュー ======== */
+nav ul {
+	/* nav配下 ulのスタイル設定(余白なし) */
+	margin: 0px;
+	padding: 0px;
+}
+
+nav li {
+	/* nav配下 liのスタイル設定(回り込み/マーカーなし/テキスト中央揃え/境界線) */
+	float: left;
+	list-style-type: none;
+	text-align: center;
+	border-left: 1px solid #fff;
+}
+
+nav li a {
+	/* nav li配下  aのスタイル設定(ブロック要素/幅/フォントカラー/行間隔/アンカーの下線取り除き/背景色) */
+	display: block;
+	width: 212px;
+	color: #fff;
+	line-height: 40px;
+	text-decoration: none;
+	background-color: #0000cd;
+}
+
+nav li a:hover {
+	/* アンカーホバー時の効果 */
+	color: #fff;
+	text-decoration: none;
+	background-color: #6495ed;
+}
+/* ======== サイドメニュー ======== */
+aside h3 {
+	/* aside配下 h3のスタイル設定(余白/太字/フォントカラー/テキスト中央揃え/背景色) */
+	margin: 1px;
+	padding: 3px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	background-color: #4169e1
+}
+
+aside ul {
+	/* aside配下 ulのスタイル設定(余白なし/境界線/背景色) */
+	margin: 0;
+	padding: 0;
+	border: 1px solid #aaa;
+	border-top: none;
+	background-color: #fff;
+}
+
+aside li {
+	/* aside配下 liのスタイル設定(幅/行間隔/マーカーなし/境界線) */
+	width: 200px;
+	line-height: 1.4;
+	list-style: none;
+	border-top: 1px solid #aaa;
+}
+
+aside li a {
+	/* nav li配下  aのスタイル設定(ブロック要素/余白/境界線) */
+	display: block;
+	padding: 10px 5px;
+	border-left: 5px solid #4169e1;
+}
+
+/* ======== form ======== */
+form {
+	/* フォームをページの中央に置く */
+	margin: 0 auto;
+	width: 600px;
+}
+
+input, select {
+	/* すべてのテキストフィールドを同じサイズにする */
+	box-sizing: border-box;
+	/* テキストフィールドのボーダーの外見を同一にする */
+	border: 1px solid #999;
+}
+
+input.tblInput {
+	/* すべてのテキストフィールドを同じサイズにする */
+	width: 300px;
+	box-sizing: border-box;
+	/* テキストフィールドのボーダーの外見を同一にする */
+	border: 1px solid #999;
+}
+
+.radio {
+	width: 20px;
+}
+
+#and, #or {
+	width: 20px;
+	margin-left: 40px;
+}
+
+input:focus {
+	/* アクティブな要素を少し強調する */
+	border-color: #000;
+	background-color: #f0f8ff;
+}
+
+.button, .dialog_button {
+	/* buttonクラスのスタイル設定(幅/高さ/太字/フォントカラー/境界線/背景画像) */
+	width: 150px;
+	height: 40px;
+	font-weight: bold;
+	color: #fff;
+	border: 1px solid;
+	cursor: pointer;
+	margin-left: 25px;
+	padding-left: 25px;
+	background-image: url("../images/btn1.gif");
+}
+
+.dis_button {
+	/* buttonクラスのスタイル設定(幅/高さ/太字/フォントカラー/境界線/背景画像) */
+	width: 150px;
+	height: 40px;
+	font-weight: bold;
+	color: #fff;
+	border: 1px solid;
+	cursor: pointer;
+	margin-left: 25px;
+	padding-left: 25px;
+	background-image: url("../images/btn1.gif");
+	filter: alpha(opacity = 50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+}
+
+/* ======== table ======== */
+.basetable {
+	width: 98%;
+	border-collapse: collapse;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: 0 auto;
+}
+
+.basetable th {
+	width: 25%;
+	height: 35px;
+	text-align: left;
+	padding: 6px;
+	text-align: left;
+	vertical-align: middle;
+	color: #666666;
+	background-image: url("../images/btn2.png"); repeat-x top left #eee;
+	border-bottom: 1px dotted #999;
+	border-left: 1px solid #ccc;
+}
+
+.basetable td {
+	width: 75%;
+	height: 35px;
+	padding: 6px;
+	border-bottom: 1px dotted #999;
+	border-left: 1px solid #ccc;
+}
+
+table .tablebutton {
+	background-color: #333;
+	color: #fff;
+	width: 60px;
+	height: 30px;
+}
+
+table .tablebutton:hover {
+	background-color: #59b1eb;
+	transition: all.3s;
+}
+/* ======== その他 ======== */
+small {
+	color: #808080
+}
+
+.req_img {
+	margin: 0px 0px -5px 10px;
+	float: right;
+}
+
+.msg {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #000000;
+	margin: 0px 0px 0px 15px;
+}
+
+.error {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #ff0000;
+	margin: 0px 0px 0px 15px;
+}
+
+/* --- id="error_summary"のスタイル (idセレクタ)--- */
+#error_summary {
+	color: #F00;
+	display: none;
+}
+
+/* --- class="error_field"のスタイル (classセレクタ)--- */
+.error_field {
+	background-color: #F9C;
+}
+
+.center {
+	text-align: center;
+}
+
+/* --- id="logout"のスタイル (idセレクタ)--- */
+#logout {
+	float: right;
+}
